@@ -1,0 +1,13 @@
+# Custom rules from the Suricata lab.
+# Only SID 1000001 revision 2 was freshly verified in the documented test.
+# Other rules are included as configured examples and need separate validation.
+
+alert icmp any any -> $HOME_NET any (msg:"ICMP Echo Request Detected"; itype:8; sid:1000001; rev:2;)
+
+alert tcp any any -> $HOME_NET 22 (msg:"SSH Connection Attempt"; flow:to_server; sid:1000002; rev:1;)
+
+alert tcp any any -> $HOME_NET 21 (msg:"FTP Connection Attempt"; flow:to_server; sid:1000003; rev:1;)
+
+alert tcp any any -> $HOME_NET any (msg:"Possible Nmap SYN Scan Detected"; flags:S; flow:to_server; threshold:type both, track by_src, count 20, seconds 3; sid:1000004; rev:1;)
+
+alert icmp any any -> $HOME_NET any (msg:"Possible ICMP Ping Sweep Detected"; itype:8; threshold:type both, track by_src, count 5, seconds 5; sid:1000005; rev:1;)
