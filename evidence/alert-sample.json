@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2026-10-13T08:46:18.821846-0400",
+    "event_type": "alert",
+    "src_ip": "10.0.2.7",
+    "dest_ip": "10.0.2.1",
+    "proto": "ICMP",
+    "signature": "ICMP Echo Request Detected",
+    "signature_id": 1000001,
+    "revision": 2,
+    "evidence_source": "fast.log",
+    "note": "Normalized from the verified fast.log line; this is not a raw EVE JSON record."
+  },
+  {
+    "timestamp": "2026-10-13T08:46:19.847307-0400",
+    "event_type": "alert",
+    "src_ip": "10.0.2.7",
+    "dest_ip": "10.0.2.1",
+    "proto": "ICMP",
+    "signature": "ICMP Echo Request Detected",
+    "signature_id": 1000001,
+    "revision": 2,
+    "evidence_source": "fast.log",
+    "note": "Normalized from the verified fast.log line; this is not a raw EVE JSON record."
+  },
+  {
+    "timestamp": "2026-10-13T08:46:20.848549-0400",
+    "event_type": "alert",
+    "src_ip": "10.0.2.7",
+    "dest_ip": "10.0.2.1",
+    "proto": "ICMP",
+    "signature": "ICMP Echo Request Detected",
+    "signature_id": 1000001,
+    "revision": 2,
+    "evidence_source": "fast.log",
+    "note": "Normalized from the verified fast.log line; this is not a raw EVE JSON record."
+  },
+  {
+    "timestamp": "2026-10-13T08:46:21.863098-0400",
+    "event_type": "alert",
+    "src_ip": "10.0.2.7",
+    "dest_ip": "10.0.2.1",
+    "proto": "ICMP",
+    "signature": "ICMP Echo Request Detected",
+    "signature_id": 1000001,
+    "revision": 2,
+    "evidence_source": "fast.log",
+    "note": "Normalized from the verified fast.log line; this is not a raw EVE JSON record."
+  }
+]
